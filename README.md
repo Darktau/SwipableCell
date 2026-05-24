@@ -9,12 +9,6 @@ A SwiftUI swipe-actions component for `ScrollView`, with physics-based gestures,
 
 > Requires **iOS 18+ / macOS 15+** (uses `@Observable`, `Group(subviews:)`, `ContainerValues`).
 
----
-## Demo
-
-![Demo](screen_1.gif)
-![Demo](screen_2.gif)
-
 
 ---
 
@@ -294,3 +288,9 @@ ScrollView (.makeSwipable)
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
+
+---
+## Demo
+
+![Demo](screen_1.gif)
+![Demo](screen_2.gif)
