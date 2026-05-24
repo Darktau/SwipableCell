@@ -106,7 +106,6 @@ public struct SwipeableCell<Content: View>: View {
                 lockedEdge = t.x < 0 ? .trailing : .leading
                 coordinator?.open(id)
             }
-            offset = rubberBand(t.x + oldOffset)
             return
         }
         offset = rubberBand(t.x + oldOffset)
@@ -193,6 +192,7 @@ public struct SwipeableCell<Content: View>: View {
         withAnimation(.spring(response: 0.32, dampingFraction: 0.85)) {
             frameHeight = 0
             offset = 0
+            oldOffset = 0
             lockedEdge  = nil
         } completion: {
             action?()
